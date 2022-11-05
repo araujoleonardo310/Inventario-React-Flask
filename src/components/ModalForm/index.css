@@ -1,0 +1,14 @@
+
+
+.container__btn {
+    vertical-align: middle;
+}
+
+.container__btn .btn, .container__form .btn__save {
+    background: var(--backg-blue);
+    color: var(--color-white)
+}
+
+.container__btn .btn {
+    border-radius: 20px;
+}

@@ -1,0 +1,15 @@
+.container__table {
+  margin-top: 20px;
+  text-align: center;
+}
+
+thead .th {
+  background: var(--backg-blue);
+  color: var(--color-white);
+  border: 5px solid transparent;
+  background-clip: padding-box;
+}
+
+.tbody {
+  background: #d5d5d5;
+}
