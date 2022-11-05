@@ -23,7 +23,7 @@ const TableComp = () => {
 
   return (
     <>
-    <ModalForm ListProdutos={ListProdutos}/>
+      <ModalForm ListProdutos={ListProdutos} />
       <Table className="container__table">
         <thead>
           <tr>

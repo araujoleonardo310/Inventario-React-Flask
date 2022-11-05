@@ -1,11 +1,10 @@
-
-
 .container__btn {
+    font-size: 16px;
+    font-weight: 300;
     vertical-align: middle;
 }
 
-.container__btn .btn, .container__form .btn__save {
-    background: var(--backg-blue);
+.container__btn .btn__addItem, .container__form .btn__save {
     color: var(--color-white)
 }
 

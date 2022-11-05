@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { BsPlusLg } from "react-icons/bs";
 import { Button, Modal, Form } from "react-bootstrap";
 import "./index.css";
@@ -17,14 +17,20 @@ const ModalForm = ({ ListProdutos }) => {
 
   const handleSaveProduto = async (e) => {
     e.preventDefault();
+    if (!produto.nome)
+      return toast.error(
+        "Produto não adicionado, verifique e tente novamente..."
+      );
     const payload = {
       nome: produto.nome,
       dataDeCriacao: produto.dataDeCriacao,
     };
     try {
-      await ModalServices.AddProduto(payload);
-      toast.sucess("Adicionado com sucesso.");
-      ListProdutos();
+      const { status } = await ModalServices.AddProduto(payload);
+      if (status === 200) {
+        toast.success("Adicionado com sucesso.");
+        ListProdutos();
+      }
     } catch (error) {
       toast.error("Error ao adicionar produto...");
       console.log(error);
@@ -34,7 +40,7 @@ const ModalForm = ({ ListProdutos }) => {
   return (
     <>
       <div className="container__btn text-end">
-        <Button className="btn bton__addItem" onClick={handleShow}>
+        <Button className="bton__addItem" onClick={handleShow}>
           <BsPlusLg /> Novo item
         </Button>
       </div>

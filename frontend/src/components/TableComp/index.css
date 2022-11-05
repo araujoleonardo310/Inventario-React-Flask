@@ -1,5 +1,5 @@
 .container__table {
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -7,6 +7,13 @@ thead .th {
   background: var(--backg-blue);
   color: var(--color-white);
   border: 5px solid transparent;
+  background-clip: padding-box;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.tbody td { 
+  border-right: 5px solid #FFF;
   background-clip: padding-box;
 }
 
