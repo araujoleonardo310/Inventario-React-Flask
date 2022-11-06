@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# Projeto: Inventário React & Python
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center" id="indice">
+  <a href="#sobre">Sobre o Projeto ℹ️</a>&nbsp;&nbsp;&nbsp;
+  <a href="#tecno">Tecnologias 🚀</a>&nbsp;&nbsp;&nbsp;
+  <a href="#instrucoes">Instruções / Tutorial 🎓</a>&nbsp;&nbsp;&nbsp;
+  <a href="#referencias">Referências 🔗</a>  
+</div>
+<br/>
 
-## Available Scripts
+### <span id="sobre">Sobre ℹ️</span>
 
-In the project directory, you can run:
+Interface para manuseio dos itens cadastrados utilizando framework React JS, Web API Flask e Python.
 
-### `yarn start`
+![](about-project/images/web-invetario-projeto.PNG)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[Voltar ⬆️](#indice)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br/>
 
-### `yarn test`
+### <span id="tecno">Tecnologias 🚀</span>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React JS 
+- Python 
+- React Bootstrap
+- Axios
+- React Toastify
 
-### `yarn build`
+[Voltar ⬆️](#indice)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### <span id="instrucoes">Instruções / Tutorial 🎓</span>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Como Clonar
 
-### `yarn eject`
+* Faça **fork** do projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Escolha a url para clone e copie
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Em seu terminal, execute o comando complentando a url clone
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+      git clone urlExemplo
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Executando Backend para disponibilizar a Web API
 
-## Learn More
+* Com seu terminal, entre na pasta **backend** e ative o script da máquina virtual:
+  > Windows e usando terminal PowerShell
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+      venv\Scripts\activate
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Depois da ativação, execute o arquivo **"main.py"** com o comando:
 
-### Code Splitting
+      python main.py
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+>*NOTA:* A executação pode ser realizada com auxílio de uma IDE como VSC ou PyCharm que são as mais comuns para py, contudo é importante que elas reconheçam meu arquivo **"main.py"** para executar. 
 
-### Analyzing the Bundle Size
+#### Consumindo Web API no Frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* Após executar a Web API no backend, entre com outra sessão do seu terminal na pasta **frontend** e execute: 
 
-### Making a Progressive Web App
+    npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* Eu seu browser acesse a url:
 
-### Advanced Configuration
+    http://localhost:3000/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+  ![](about-project/images/web-invetario-projeto.PNG)  
 
-### Deployment
+### Como Usar
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+#### Para adicionar um novo produto
 
-### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Aperte o botão adicionar item
+![](about-project/images/modal-form.PNG)
+
+- Escreva um nome de um produto:
+    - Não seja vázio, espaço ou nulo 
+
+![](about-project/images/adicionando-produto.png)
+
+* Aperte o botão cancelar ou o ícone **"X"** para desistir de adicionar e fechar o modal 
+
+[Voltar ⬆️](#indice)
+
+<br/>
+
+### <span id="referencias">Referências 🔗</span>
+
+- Como criar uma Api com Flask + Python - #019 - Api Rest com Python + Flask - [PycodeBR](https://www.youtube.com/watch?v=LP8besicfH4)
+
+[Voltar ⬆️](#indice)
